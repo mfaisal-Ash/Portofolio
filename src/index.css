@@ -1,49 +1,30 @@
-<<<<<<< HEAD
 /* stylelint-disable at-rule-no-unknown */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* stylelint-enable at-rule-no-unknown */
-=======
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 
 body {
     font-family: 'Inter', sans-serif;
     @apply overflow-x-hidden;
 }
 
-=======
-body {
-    font-family: 'Inter', sans-serif;
-    @apply overflow-x-hidden
-}
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-70 dark:bg-dark dark:bg-opacity-50;
     backdrop-filter: blur(5px);
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
 
 .navbar-list {
     @apply text-base py-2 mx-8 flex text-dark dark:text-white;
 }
 
-=======
-.navbar-list {
-    @apply text-base py-2 mx-8 flex text-dark dark:text-white;
-}
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 .hamburger-line {
     margin-top: 8px;
     width: 30px;
@@ -52,7 +33,6 @@ body {
     display: block;
     background-color: black;
     @apply dark:bg-white;
-<<<<<<< HEAD
 }
 
 .hamburger-line:nth-child(1) {
@@ -65,40 +45,16 @@ body {
 
 .hamburger-active > span:nth-child(1) {
     @apply rotate-[45deg] w-9;
-=======
-
-}
-.hamburger-line:nth-child(1) {
-    width: 15px;
-
-}
-.hamburger-line:nth-child(3){
-    width: 25px;
-
-}
-
-.hamburger-active > span:nth-child(1) {
-    @apply rotate-[45deg] w-9 ;
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 }
 
 .hamburger-active > span:nth-child(2) {
     @apply scale-0;
-<<<<<<< HEAD
 }
 
 .hamburger-active > span:nth-child(3) {
     @apply -rotate-[45deg] w-9;
 }
 
-=======
-
-}
-
-.hamburger-active > span:nth-child(3) {
-    @apply -rotate-[45deg] w-9 ;
-}
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 .carousel-image {
     width: 120px;
     height: auto;
@@ -107,18 +63,11 @@ body {
 #dark-toggle:checked ~ label div .toggle-circle {
     @apply translate-x-4;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 #en-toggle:checked ~ label div .toggle-circle {
     @apply translate-x-4;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 .float-left {
     float: left;
 }
@@ -129,20 +78,7 @@ body {
     clear: both;
 }
 
-<<<<<<< HEAD
 .matrix-background {
-=======
-@keyframes matrix-fall {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(100%);
-    }
-  }
-
-  .matrix-background {
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
     position: relative;
     background-color: #000;
     overflow: hidden;
@@ -178,37 +114,4 @@ body {
 @keyframes matrix-fall {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100%); }
-<<<<<<< HEAD
 }
-=======
-}
-
-
-/*   
-  .matrix-background {
-    position: relative;
-    background-color: #000;
-    overflow: hidden;
-  }
-  
-  .matrix-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    font-family: monospace;
-    color: #00ff00;
-    font-size: 20px;
-    animation: matrix-fall 10s linear infinite;
-    opacity: 0.5;
-  }
-  
-  .matrix-text::before {
-    content: "SELAMAT DATANG";
-    position: absolute;
-    white-space: nowrap;
-    animation: matrix-fall 10s linear infinite;
-  } */
-  
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834

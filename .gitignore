@@ -12,13 +12,10 @@ dist
 dist-ssr
 *.local
 
-<<<<<<< HEAD
 # Environment variables (jangan pernah commit file ini)
 .env
 .env.local
 
-=======
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

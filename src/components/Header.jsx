@@ -72,11 +72,7 @@ export default function Header() {
             } else {
                 setIsScrolled(false);
             }
-<<<<<<< HEAD
             setLastScroppTop(Math.max(0, show));
-=======
-            setLastScroppTop(show <= 0 ? 0 : show);
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
         };
 
         document.addEventListener('scroll', handleScroll);
@@ -100,7 +96,6 @@ export default function Header() {
                             <span className="hamburger-line transition duration-300 ease-in-out"></span>
                             <span className="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                         </button>
-<<<<<<< HEAD
                         <nav id="nav-menu" className={`${isOpen ? '' : 'hidden'} absolute py-4 top-full max-w-[250px] -right-5 bg-white shadow-lg rounded-lg w-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-dark lg:dark:bg-transparent`}>
                             <ul className="block lg:flex">
                                 <li className="group"><a href="#home" onClick={toggleMenu} className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">Beranda</a></li>
@@ -113,37 +108,16 @@ export default function Header() {
                                     <input type="checkbox" id="dark-toggle" className="hidden" checked={isDark} onChange={handleDarkMode} />
                                     <label htmlFor="dark-toggle">
                                         <span className="sr-only">Toggle dark mode</span>
-=======
-                        <nav id="nav-menu" className={`${isOpen ? '' : 'hidden'} absolute py-4 top-full max-w-[250px] -right-5 bg-white shadow-lg rounded-lg w-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-dark lg:dark:bg-transparent`} onClick={toggleMenu}>
-                            <ul className="block lg:flex">
-                                <li className="group"><a href="#home" className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">Beranda</a></li>
-                                <li className="group"><a href="#about" className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">Tentang Saya</a></li>
-                                <li className="group"><a href="#portfolio" className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">portfolio</a></li>
-                                <li className="group"><a href="#experience" className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">Pengalaman</a></li>
-                                <li className="group"><a href="#certificate" className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">Sertifikat</a></li>
-                                <li className="group"><a href="#contact" className="navbar-list group-hover:text-[#CCCCCC] dark:text-white">Kontak</a></li>
-                                <li className="mt-3 lg:mt-0 flex pl-8 items-center">
-                                    <input type="checkbox" id="dark-toggle" className="hidden" checked={isDark} onChange={handleDarkMode} />
-                                    <label htmlFor="dark-toggle">
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                                         <div className="flex h-5 w-9 cursor-pointer items-center bg-slate-400 rounded-full dark:bg-white">
                                             <div className="toggle-circle h-5 w-5 rounded-full bg-white transition duration-300 ease-in-out dark:bg-dark"></div>
                                         </div>
                                     </label>
                                 </li>
-<<<<<<< HEAD
                                 <li className="mt-3 lg:mt-0 flex pl-8 items-center">
                                     <GoogleTranslateButton />
                                 </li>
                                 <li className="lg:mt-0 items-center flex">
                                     <button onClick={() => { openModal(); toggleMenu(); }} className="px-4 py-1 ml-4 rounded-full border border-dark dark:border-white dark:text-white font-base text-sm hidden lg:block">resume</button>
-=======
-                                {/* <li className="mt-3 lg:mt-0 flex pl-8 items-center">
-                                    <GoogleTranslateButton />
-                                </li> */}
-                                <li className="lg:mt-0 items-center flex">
-                                    <button onClick={openModal} className="px-4 py-1 ml-4 rounded-full border border-dark dark:border-white dark:text-white font-base text-sm hidden lg:block">resume</button>
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                                 </li>
                             </ul>
                         </nav>
@@ -169,8 +143,4 @@ export default function Header() {
             )}
         </header>
     );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834

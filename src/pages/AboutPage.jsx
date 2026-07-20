@@ -20,7 +20,11 @@ export default function AboutPage() {
             </h2>
             <p
               className={
+<<<<<<< HEAD
                 "font-medium text-base text-slate-600 dark:text-slate-300 lg:text-lg"
+=======
+                "font-medium text-base text-secondary dark:text-[#1B1717]  lg:text-lg"
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
               }
             >
              Jangan mudah menyerah dan putus asa. Berjuang demi mendapatkan sesuatu yang menarik 
@@ -68,7 +72,11 @@ export default function AboutPage() {
               </a>
               {/*instagram*/}
               <a
+<<<<<<< HEAD
                 href="https://www.instagram.com/faisal_shishidiq/"
+=======
+                href="https://www.instagram.com/faisal_shishidiq/?next=%2F"
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                 className={
                   "h-9 w-9 mr-3 rounded-full flex  justify-center items-center text-slate-300 border border-slate-300 hover:border-primary hover:bg-primary dark:hover:bg-[#1B1717] hover:text-white "
                 }

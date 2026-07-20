@@ -2,14 +2,23 @@ import React, { useEffect, useRef } from 'react';
 
 const GoogleTranslate = () => {
     const googleTranslateRef = useRef(null);
+<<<<<<< HEAD
     const translateInstanceRef = useRef(null);
+=======
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 
     useEffect(() => {
         let intervalId;
         const checkGoogleTranslate = () => {
+<<<<<<< HEAD
             if (window.google?.translate) {
                 clearInterval(intervalId);
                 translateInstanceRef.current = new window.google.translate.TranslateElement(
+=======
+            if (window.google && window.google.translate) {
+                clearInterval(intervalId);
+                new window.google.translate.TranslateElement(
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                     {
                         pageLanguage: 'id',
                         layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
@@ -73,4 +82,68 @@ const GoogleTranslate = () => {
     );
 };
 
+<<<<<<< HEAD
 export default GoogleTranslate;
+=======
+export default GoogleTranslate;
+
+
+// import React, { useRef, useEffect } from 'react';
+
+// const GoogleTranslateCustom = () => {
+//     const googleTranslateRef = useRef(null);
+//     const selectLanguageRef = useRef(null);
+
+//     useEffect(() => {
+//         let intervalId;
+//         const checkGoogleTranslate = () => {
+//             if (window.google && window.google.translate) {
+//                 clearInterval(intervalId);
+
+//                 // Inisialisasi Google Translate API dengan opsi bahasa yang diinginkan
+//                 const googleTranslate = new window.google.translate.TranslateElement(
+//                     {
+//                         pageLanguage: 'id', // Bahasa halaman (opsional)
+//                         layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+//                         autoDisplay: false, // Nonaktifkan tampilan terjemahan otomatis
+//                     },
+//                     googleTranslateRef.current
+//                 );
+
+//                 // Fungsi untuk menerjemahkan teks
+//                 const translateText = (text, targetLanguage) => {
+//                     googleTranslate.showBanner(false); // Sembunyikan banner iklan (opsional)
+//                     googleTranslate.translate(text, targetLanguage);
+//                 };
+
+//                 // Event listener untuk perubahan dropdown bahasa
+//                 selectLanguageRef.current.addEventListener('change', (event) => {
+//                     const selectedLanguage = event.target.value;
+//                     const textToTranslate = 'Teks yang ingin Anda terjemahkan'; // Ganti dengan teks yang ingin Anda terjemahkan
+//                     translateText(textToTranslate, selectedLanguage);
+//                 });
+//             }
+//         };
+
+//         intervalId = setInterval(checkGoogleTranslate, 100);
+//         return () => clearInterval(intervalId); // Bersihkan interval saat komponen dibongkar
+//     }, []);
+
+//     return (
+//         <div>
+//             {/* Dropdown untuk memilih bahasa */}
+//             <select id="select-language" ref={selectLanguageRef}>
+//                 <option value="en">English</option>
+//                 <option value="id">Indonesian</option>
+//                 {/* Tambahkan opsi bahasa lain yang diinginkan di sini */}
+//             </select>
+
+
+//             {/* Kontainer untuk Google Translate widget */}
+//             {/* <div id="google_translate_element" ref={googleTranslateRef}></div> */}
+//         </div>
+//     );
+// };
+
+// export default GoogleTranslateCustom;
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834

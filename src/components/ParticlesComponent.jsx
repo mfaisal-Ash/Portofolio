@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
@@ -20,10 +21,53 @@ const ParticlesComponent = () => {
   if (!init) {
     return null;
   }
+=======
+import Particles from "@tsparticles/react";
+import { useCallback, useMemo, useState } from "react";
+import PropTypes from "prop-types";
+// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+// import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+
+const ParticlesComponent = (props) => {
+  const [init, setInit] = useState(false);
+  // this should be run only once per application lifetime
+  //   useEffect(() => {
+  //     initParticlesEngine(async (engine) => {
+  //       // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+  //       // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+  //       // starting from v2 you can add only the features you need reducing the bundle size
+  //       //await loadAll(engine);
+  //       //await loadFull(engine);
+  //       await loadSlim(engine);
+  //       //await loadBasic(engine);
+  //     }).then(() => {
+  //       setInit(true);
+  //     });
+  //   }, []);
+
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+  const particlesLoaded = useCallback(async () => {}, []);
+
+  //   const options = useMemo(
+  //     () => ({
+
+  //     }),
+  //     []
+  //   );
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
 
   return (
     <Particles
       id="tsparticles"
+<<<<<<< HEAD
+=======
+      init={particlesInit}
+      loaded={particlesLoaded}
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
       options={{
         background: {
           color: {

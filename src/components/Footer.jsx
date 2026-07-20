@@ -1,14 +1,28 @@
 export default function Footer() {
     return (
+<<<<<<< HEAD
         <section className="pt-24 pb-12 bg-dark">
             <div className="container">
+=======
+        <section className="pt-24 pb-12 bg-dark matrix-background">
+            <div className="matrix-text"></div> {/* Matrix effect */}
+            <div className="container">
+            <div className="matrix-text">
+                    <span>SELAMAT DATANG</span>
+                </div>
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                 <div className="flex flex-wrap">
                     <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3"
                         data-aos="fade-right"
                         data-aos-offset="50"
                         data-aos-duration="500">
+<<<<<<< HEAD
                         <h2 className={'font-bold text-white text-3xl mb-5'}>MFaisalA</h2>
                         <h3 className={'font-bold text-2xl mb-2'}>Fullstack Developer</h3>
+=======
+                        <h2 className={'font-bold text-white text-3xl mb-5'}>Faidiq</h2>
+                        <h3 className={'font-bold text-2xl mb-2'}>Analysis Data</h3>
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                         <p>Jl.cijambe dalam rt07/rw06</p>
                         <p>Bandung, Jawa Barat</p>
                     </div>
@@ -19,6 +33,7 @@ export default function Footer() {
                         <h3 className={'font-semibold text-white text-xl mb-5'}>Project Category</h3>
                         <ul className="text-slate-300">
                             <li className="mb-2">
+<<<<<<< HEAD
                                 <button type="button" className="inline-block text-base hover:text-[#333333] bg-transparent p-0 border-0 text-left">Understanding Data</button>
                             </li>
                             <li className="mb-2">
@@ -26,6 +41,15 @@ export default function Footer() {
                             </li>
                             <li className="mb-2">
                                 <button type="button" className="inline-block text-base hover:text-[#333333] bg-transparent p-0 border-0 text-left">Learn More science and knowledge</button>
+=======
+                                <a href="" className="inline-block text-base hover:text-[#333333]">Understanding Data</a>
+                            </li>
+                            <li className="mb-2">
+                                <a href="" className="inline-block text-base hover:text-[#333333]">Understading Bussiness</a>
+                            </li>
+                            <li className="mb-2">
+                                <a href="" className="inline-block text-base hover:text-[#333333]">Learn More science and knowledge</a>
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                             </li>
                         </ul>
                     </div>
@@ -36,7 +60,11 @@ export default function Footer() {
                         <h3 className={'font-semibold text-white text-xl mb-5'}>Tautan in Project</h3>
                         <ul className="text-slate-300">
                             <li className="mb-2">
+<<<<<<< HEAD
                                 <a href="#hero" className="inline-block text-base hover:text-[#333333]">Beranda</a>
+=======
+                                <a href="#" className="inline-block text-base hover:text-[#333333]">Beranda</a>
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                             </li>
                             <li className="mb-2">
                                 <a href="#about" className="inline-block text-base hover:text-[#333333]">Tentang Saya </a>
@@ -94,8 +122,17 @@ export default function Footer() {
                             </svg>
                         </a>
                     </div>
+<<<<<<< HEAD
                     <p className={'font-medium text-secondary text-xs text-center text-[#CCCCCC]'}>
                         Muhammad Faisal Ashshidiq &copy; 2026
+=======
+                    <p className={'font-medium text-secondary text-xs text-center '}
+                    ><a href="#" target={'_blank'} className={'text-[#CCCCCC]'}>Muhammad Faisal Ashshidiq &copy; 2024</a>
+                        {/* , yang dibuat menggunakan <a
+                            href="https://id.react.dev/" target={'_blank'} className={'text-cyan-700'}
+                            rel="noreferrer">reactJs</a>,<a href="https://tailwindcss.com/" target={'_blank'}
+                                className={'text-cyan-300'} rel="noreferrer">TailwindCss</a> */}
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                     </p>
                 </div>
             </div>

@@ -76,11 +76,19 @@ export default function Portfolio() {
                     <div className="mx-auto text-center mb-16" data-aos="zoom-in">
                         <h4 className={'text-lg text-primary font-semibold mb-2 dark:text-[#1A1A1A] uppercase'}>Portfolio</h4>
                         <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-[#1A1A1A]">Project Saya</h2>
+<<<<<<< HEAD
                         <p className="text-md font-medium text-slate-600 md:text-lg dark:text-slate-300">project saya, yang saya kembangkan. projectnya masih perlu diperbaiki.</p>
                     </div>
                     <div className="w-full p-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                         {projects.map((project, post) => (
                             <div key={post.id} className="mb-12 p-4 md:w-1/3" data-aos={project.aos}>
+=======
+                        <p className="text-md font-medium text-secondary md:text-lg dark:text-[#1A1A1A]">project saya, yang saya kembangkan. projectnya masih perlu diperbaiki.</p>
+                    </div>
+                    <div className="w-full p-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                        {projects.map((project, index) => (
+                            <div key={index} className="mb-12 p-4 md:w-1/3" data-aos={project.aos}>
+>>>>>>> ba430f312b1dfd8b6da0edee7f21b43a47512834
                                 <div className="card bg-white dark:bg-white shadow-xl rounded-lg overflow-hidden ">
                                     <figure>
                                         <img src={project.imgSrc} alt={project.imgAlt} className="w-full transform transition-transform duration-300 hover:scale-110" />

@@ -2,13 +2,13 @@ import { ReactTyped } from "react-typed";
 
 const MyComponent = () => (
     <div>
-        <ReactTyped strings={["i'm👌"]} typeSpeed={40} />
+        <ReactTyped strings={["i'm happy👌"]} typeSpeed={40} />
         <br />
 
         <ReactTyped
             strings={[
                 "Analytic Data",
-                "Data Engineer",
+                "Programmer",
                 "Frontend Developer",
                 "Fullstack Developer",
             ]}

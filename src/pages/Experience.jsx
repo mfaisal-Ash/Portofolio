@@ -1,7 +1,6 @@
 import React from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
-// SonarQube: S1192 - hindari duplikasi string literal className panjang
 const ICON_LINK_CLASS =
     'mx-4 py-4 lg:grayscale lg:opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8';
 
@@ -10,7 +9,7 @@ const TIMELINE_ITEMS = [
         id: 'progate',
         year: '2022',
         href: 'https://www.progate.com/',
-        image: '/img/experience/dicoding1.jpeg',
+        image: '/images/experience/progate.jpeg',
         alt: 'Logo Progate',
         paragraphs: [
             <>
@@ -28,8 +27,8 @@ const TIMELINE_ITEMS = [
         id: 'idcamp',
         year: '2022',
         href: 'https://www.dicoding.com/',
-        image: '/img/experience/idcamp.png',
-        alt: 'Logo IDCamp Dicoding',
+        image: '/images/experience/lukanakit.png',
+        alt: 'Logo Lukanakit',
         paragraphs: [
             <>
                 <span className="font-bold">(LUKANAKIT) LU KA ANAK IT</span> adalah salah satu organisasi

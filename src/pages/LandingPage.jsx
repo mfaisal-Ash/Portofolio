@@ -26,7 +26,7 @@ export default function LandingPage() {
   };
 
   const handleDownload = (language) => {
-    const url = language === "en" ? "/resume_en.pdf" : "/resume_id.pdf";
+    const url = language === "en" ? '/resume/cv_MfaisalAsh_ENG.pdf' : '/resume/cv_MfaisalAsh_IND.pdf';
     window.open(url, "_blank");
     closeModal();
   };
@@ -71,11 +71,12 @@ export default function LandingPage() {
                   "font-medium text-slate-600 mb-10 leading-relaxed dark:text-slate-300"
                 }
               >
-                Jangan mudah menyerah dan putus asa.{" "}
+               Kata-Kata: "Jangan mudah menyerah dan putus asa."{" "}
                 <span className={"text-[#630000] font-bold dark:text-white"}>
                 Tak perlu ditakutkan dengan keterbatasan, karena keterbatasan itu hanya ada di pikiran kita sendiri.
                 Tak perlu ditakutkan dengan manusia lain, karena karakter manusia lain hanya ada di dalam pikiran sendiri.
                 </span>
+                
               </p>
               <div className="flex gap-2">
                 <a
@@ -151,12 +152,14 @@ export default function LandingPage() {
               </p>
               <div className="flex justify-between gap-3">
                 <button
+                  type="button"
                   onClick={() => handleDownload("en")}
                   className="px-4 py-2 bg-primary text-white rounded"
                 >
                   English
                 </button>
                 <button
+                  type="button"
                   onClick={() => handleDownload("id")}
                   className="px-4 py-2 bg-primary text-white rounded"
                 >

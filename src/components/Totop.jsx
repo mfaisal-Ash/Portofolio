@@ -19,11 +19,13 @@ export default function Totop() {
         };
     }, [checkScrollTop, toTop]);
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
-        <>
-            <a href="#" className={`fixed bottom-4 right-4 z-[9999]  ${toTop ? 'flex' : 'hidden'} h-14 w-14 items-center justify-center rounded-full bg-primary p-4 transition duration-500 animate-bounce dark:bg-white `} id={'to-top'}>
+        <button type="button" onClick={handleScrollToTop} className={`fixed bottom-4 right-4 z-[9999]  ${toTop ? 'flex' : 'hidden'} h-14 w-14 items-center justify-center rounded-full bg-primary p-4 transition duration-500 animate-bounce dark:bg-white `} id={'to-top'}>
                 <span className={'mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2 dark:border-dark'}></span>
-            </a>
-        </>
+        </button>
     )
 }

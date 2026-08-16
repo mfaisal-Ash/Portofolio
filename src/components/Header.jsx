@@ -37,7 +37,7 @@ export default function Header() {
     };
 
     const handleDownload = (lang) => {
-        const url = lang === 'en' ? '/resume_en.pdf' : '/resume_id.pdf';
+        const url = lang === 'en' ? '/resume/cv_MfaisalAsh_ENG.pdf' : '/resume/cv_MfaisalAsh_IND.pdf';
         window.open(url, '_blank');
         closeModal();
     };

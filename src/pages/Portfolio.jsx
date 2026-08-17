@@ -99,8 +99,15 @@ export default function Portfolio() {
                         {projects.map((project, post) => (
                             <div key={post.id} className="mb-12 p-4 md:w-1/3" data-aos={project.aos}>
                                 <div className="card bg-white dark:bg-white shadow-xl rounded-lg overflow-hidden ">
-                                    <figure>
-                                        <img src={project.imgSrc} alt={project.imgAlt} className="w-full transform transition-transform duration-300 hover:scale-110" />
+                                    <figure className="w-full h-48 md:h-52 overflow-hidden bg-slate-200">
+                                        <img
+                                            src={project.imgSrc}
+                                            alt={project.imgAlt}
+                                            loading="lazy"
+                                            width={640}
+                                            height={360}
+                                            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+                                        />
                                     </figure>
                                     <div className="card-body p-3">
                                         <h2 className="card-title font-bold">{project.title}</h2>

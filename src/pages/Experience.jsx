@@ -93,7 +93,14 @@ function TimelineItem({ item }) {
                         rel="noreferrer"
                         className="float-left max-w-[250px] mx-2.5 lg:grayscale lg:opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100"
                     >
-                        <img src={item.image} alt={item.alt} className={item.imgClassName ?? ''} />
+                        <img
+                            src={item.image}
+                            alt={item.alt}
+                            loading="lazy"
+                            width={200}
+                            height={200}
+                            className={`w-[150px] lg:w-[200px] h-[150px] lg:h-[200px] object-contain ${item.imgClassName ?? ''}`}
+                        />
                     </a>
                     {item.paragraphs.map((paragraph, i) => (
                         <p key={i.id} className="text-lg dark:text-[#CCCCCC] text-white">
